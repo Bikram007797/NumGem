@@ -1,0 +1,94 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdf6e3; /* soft paper-like */
+  color: #3a2f2f;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #e8dcc3;
+  border-bottom: 2px solid #d1c2a0;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 1.1rem;
+  color: #5c4a3d;
+}
+
+/* Games grid */
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Game card */
+.game-card {
+  background: #fffef9;
+  border: 1px solid #d8cfc2;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.game-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.game-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #4a3f35;
+}
+
+/* Play button */
+.play-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #7c6f57;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.play-btn:hover {
+  background: #5c5140;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #e8dcc3;
+  border-top: 2px solid #d1c2a0;
+  font-size: 0.9rem;
+}
